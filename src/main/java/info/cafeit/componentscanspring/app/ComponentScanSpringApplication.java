@@ -6,8 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 //multi scan package
 //@SpringBootApplication(scanBasePackages = {"info.cafeit.componentscanspring.bean", "info.cafeit.componentscanspring.app"})
-
-@SpringBootApplication(scanBasePackages = {"info.cafeit.componentscanspring"})
+//scan base package
+//@SpringBootApplication(scanBasePackages = {"info.cafeit.componentscanspring"})
+//default
+@SpringBootApplication
 public class ComponentScanSpringApplication {
 
     public static void main(String[] args) {
@@ -25,7 +27,5 @@ public class ComponentScanSpringApplication {
         } catch (Exception e) {
             System.out.println("Instance Minami không tồn tại");
         }
-
     }
-
 }
